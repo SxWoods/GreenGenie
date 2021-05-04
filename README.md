@@ -1,0 +1,2 @@
+# GreenGenie
+Weed growing application
