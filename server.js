@@ -20,9 +20,9 @@
 
 // app.use(session(sess));
 
-// //const hbs = exphbs.create({ helpers });
+// const hbs = exphbs.create({ helpers });
 
-// //app.engine('handlebars', hbs.engine);
+// app.engine('handlebars', hbs.engine);
 // app.set('view engine', 'handlebars');
 
 // app.use(express.json());
@@ -37,8 +37,10 @@
 
 const express = require('express');
 const routes = require('./routes');
-//const session = require('express-session')
-const sequelize = require('./config/connection')
+const session = require('express-session');
+const sequelize = require('./config/connection');
+const exphbs = require('express-handlebars');
+const path = require('path');
 // import sequelize connection
 
 const app = express();
@@ -47,13 +49,19 @@ const PORT = process.env.PORT || 3001;
 const sess = {
     secret: 'Super secret secret',
     resave: false,
-    saveUnitialized: true,
+    saveUninitialized: true,
 }
 
-//app.use(session(sess));
+app.use(session(sess));
+
+const hbs = exphbs.create({});
+
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
