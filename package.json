@@ -4,7 +4,7 @@
   "description": "Weed growing application",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
     "start": "node server.js"
   },
   "repository": {
@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/SxWoods/GreenGenie/issues"
   },
-  "homepage": "https://github.com/SxWoods/GreenGenie#readme"
+  "homepage": "https://github.com/SxWoods/GreenGenie#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2"
+  }
 }
