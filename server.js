@@ -54,10 +54,13 @@ const sess = {
 
 app.use(session(sess));
 
-const hbs = exphbs.create({});
+const hbs = exphbs.create({
+    
+});
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+// app.set('view options', {layout: 'main'});
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
