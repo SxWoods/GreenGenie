@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
     "express-session": "^1.17.1",
+    "gulp": "^4.0.2",
     "mysql2": "^2.2.5",
     "path": "^0.12.7",
     "postcss-cli": "^8.3.1",
