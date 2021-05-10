@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "build": "postcss css/tailwind.css -o public/build/tailwind.css",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
   },
   "repository": {
     "type": "git",
