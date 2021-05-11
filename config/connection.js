@@ -5,9 +5,9 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
-    "greengenie_db",
-    "root",
-    "Sql26280!",
+    process.env.DB_NAME,
+    process.env.DB_USER,
+    process.env.DB_PW,
     {
       host: 'localhost',
       dialect: 'mysql',
