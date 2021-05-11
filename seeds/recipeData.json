@@ -1,18 +1,18 @@
 [
     {
-      "name": "Music Near Me",
-      "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-      "needed_funding": 5000
+      "name": "OG Kush",
+      "description": "OG Kush is a cannabis seed of complex origins −Lemon Thai/Pakistani and Chemdawg− that grows into a small marijuana plant that is easy to grow despite being quite sensitive to moisture. Yielding buds that give off a mesmerizing tropical scent, it is a good option indoors as well as outdoors if the climate is temperate or Mediterranean. ",
+      "user_id": 1
     },
     {
-      "name": "The Ultimate Tech Quiz",
-      "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-      "needed_funding": 10000
+      "name": "Zkittlez",
+      "description": "The tropical delight is back and faster than ever, Zkittlez Auto! Despite the cross with Ruderalis our Zkittlez Auto is not lacking in flavour or potency; with an appetizing aroma and taste of tropical fruit, as well as THC levels up to 26% Zkittlez Auto possess’ a very well balanced effect that users describe as uplifting, and euphoric, well suited for almost any situation",
+      "user_id": 1
     },
     {
-      "name": "Roll 'Em Up",
-      "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-      "needed_funding": 800
+      "name": "White Widow",
+      "description": "The original White Widow was created with a pure Sativa land race from Brazil being pollinated by an Indica hybrid from southern India. This Indica hybrid, according to legend, was the resultof years of selecting and breeding in the mountains of Kerala to produce high resin content marijuana plants. Since the original release back in the 90s, White Widow seeds have been spread all over, which has led to a variety of plants. Now every seed company will offer this legendary strain and Royal Queen Seeds is no different, providing this absolute classic in a feminized seed.",
+      "user_id": 1
     }
   ]
   
