@@ -18,8 +18,12 @@ Recipe.init(
     description: {
       type: DataTypes.TEXT
     },
-    
-    
+    type: {
+      type: DataTypes.STRING
+    },
+    grow_time: {
+      type: DataTypes.INTEGER
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {

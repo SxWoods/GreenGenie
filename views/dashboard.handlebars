@@ -1,0 +1,42 @@
+<div class="homepage-container">
+  <h2 class="homepage-header">Green Genie
+   
+  </h2>
+  <h3>Recipes</h3>
+
+  <div class="recipe-grid"></div>
+
+</div>
+
+<script>
+    function createRecipe(recipe) {
+        return `
+           <div class="card recipe-card">
+     
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">${recipe.name}
+                        <img class="leaf_image" src="/images/leaf.svg" />
+                    </span>
+                    <p>Creator</p>
+                    <p>${recipe.user.username}</p>
+                    <p>Grow Time: ${recipe.grow_time}</p>
+                    <p>${recipe.type}</p>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">${recipe.name}</span>
+                    <p>${recipe.description}</p>
+                </div>
+            </div>
+        `
+    }
+
+  fetch('/api/recipes') .then(res => res.json()) .then(recipes => {
+  console.log(recipes);
+  // Loop throguh each recipe and add it to our grid
+        recipes.forEach(recipe => {
+            const html = createRecipe(recipe);
+            document.querySelector('.recipe-grid').innerHTML +=html;
+        })
+
+    })
+</script>

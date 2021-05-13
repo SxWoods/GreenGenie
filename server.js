@@ -41,6 +41,7 @@ const session = require('express-session');
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');
 const path = require('path');
+
 // import sequelize connection
 
 const app = express();
