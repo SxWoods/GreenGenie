@@ -15,8 +15,8 @@ const login = () => {
   document.location.replace('/login');
 }
 
-const login = () =>{
-  
+const home = () =>{
+  document.location.replace('/');
 }
 
 document.querySelector("#homebtn").addEventListener('click', home)
