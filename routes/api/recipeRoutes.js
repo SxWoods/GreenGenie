@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Recipe, User } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 router.get('/', async (req, res) =>{
   try {
@@ -13,7 +14,7 @@ router.get('/', async (req, res) =>{
   }
 }),
 
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   try {
     const newRecipe = await Recipe.create({
       ...req.body,

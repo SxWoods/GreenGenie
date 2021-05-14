@@ -19,6 +19,10 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+router.get('/recipe', async (req, res) => {
+  res.render('recipe');
+});
+
 module.exports = router;
 
 // try {
