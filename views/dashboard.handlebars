@@ -6,6 +6,8 @@
 
   <div class="recipe-grid"></div>
 
+<button id = "recipebtn">Add your own recipe</button>
+
 </div>
 
 <script>
@@ -29,6 +31,12 @@
             </div>
         `
     }
+
+    const addRecipe = () => {
+        document.location.replace('/recipe')
+    }
+
+    document.querySelector('#recipebtn').addEventListener('click', addRecipe)
 
   fetch('/api/recipes') .then(res => res.json()) .then(recipes => {
   console.log(recipes);
