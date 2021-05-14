@@ -22,3 +22,26 @@ body {
 .card-content { 
     padding: 10px  !important;
 }
+
+.homepage-container {
+    padding: 20px;
+}
+
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+
+}
+
+.leaf_image {
+    width: 50px;
+    height: 50px;
+}
+
+.recipe-card {
+    min-width: 200px;
+    /* width: 300px;
+    height: 300px; */
+}

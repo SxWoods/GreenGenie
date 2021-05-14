@@ -1,5 +1,17 @@
 const router = require('express').Router();
-const { Recipe } = require('../../models');
+const { Recipe, User } = require('../../models');
+
+router.get('/', async (req, res) =>{
+  try {
+    const Recipes = await Recipe.findAll({
+      include: [User]
+    });
+
+    res.status(200).json(Recipes);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+}),
 
 router.post('/', async (req, res) => {
   try {
