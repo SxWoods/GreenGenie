@@ -47,7 +47,7 @@ document
 
 document
   .querySelector('.signup-container')
-  .addEventListener('submit', signupFormHandler);
+  .addEventListener('submit', signupFormHandler); 
 
   
 

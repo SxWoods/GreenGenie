@@ -19,6 +19,11 @@ const home = () =>{
   document.location.replace('/');
 }
 
+const dashboard = () =>{
+  document.location.replace('/dashboard');
+} 
+
 document.querySelector("#homebtn").addEventListener('click', home)
 document.querySelector('#logoutbtn').addEventListener('click', logout);
 document.querySelector('#loginbtn').addEventListener('click', login);
+document.querySelector('#dashboardbtn').addEventListener('click', dashboard);
