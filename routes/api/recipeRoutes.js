@@ -17,11 +17,11 @@ router.get('/', async (req, res) =>{
 router.post('/', async (req, res) => {
   console.log('we hit the route :)')
   try {
-    console.log(req.body);
-    console.log(req.session);
     const newRecipe = await Recipe.create({
       name: req.body.strainName,
       description: req.body.description,
+      type: req.body.weedType,
+      grow_time: req.body.growTime,
       user_id: req.session.user_id,
     });
 
