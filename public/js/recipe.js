@@ -3,13 +3,15 @@ const submitButtonHandler = async (event) =>{
 
     const strainName = document.querySelector('#strain').value;
     const description = document.querySelector('#description').value;
+    const growTime = document.querySelector('#growTime').value;
+    const weedType = document.querySelector('#weedType').value;
 
-    console.log(strainName, description);
+    console.log(strainName, description, growTime, weedType);
 
-    if(strainName && description){
+    if(strainName && description && growTime && weedType){
         const response = await fetch('/api/recipes/', {
             method: "POST",
-            body: JSON.stringify({strainName, description}) ,
+            body: JSON.stringify({strainName, description, growTime, weedType}) ,
             headers: { 'Content-Type': 'application/json' },
         });
 
