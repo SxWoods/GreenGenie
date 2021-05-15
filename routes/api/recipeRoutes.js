@@ -14,15 +14,20 @@ router.get('/', async (req, res) =>{
   }
 }),
 
-router.post('/', withAuth, async (req, res) => {
+router.post('/', async (req, res) => {
+  console.log('we hit the route :)')
   try {
+    console.log(req.body);
+    console.log(req.session);
     const newRecipe = await Recipe.create({
-      ...req.body,
+      name: req.body.strainName,
+      description: req.body.description,
       user_id: req.session.user_id,
     });
 
     res.status(200).json(newRecipe);
   } catch (err) {
+    console.log('error: ', err);
     res.status(400).json(err);
   }
 });
