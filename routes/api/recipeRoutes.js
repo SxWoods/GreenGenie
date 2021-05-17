@@ -23,6 +23,7 @@ router.post('/', async (req, res) => {
       type: req.body.weedType,
       grow_time: req.body.growTime,
       user_id: req.session.user_id,
+      include: [User]
     });
 
     res.status(200).json(newRecipe);
