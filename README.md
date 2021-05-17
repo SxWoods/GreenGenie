@@ -1,4 +1,27 @@
 # GreenGenie
-Weed growing application
+Green Genie is a app that aims to give any marijauna plant growing enthusiast, begginer or experienced, a place to look up how to grow specific strains. It will also give you the location of your local despensaries.
 
-Make sure to run `npm install -g gulp` before running `npm install`
+## FEATURES
+- Gives user ability to create a login and sign in 
+- Map that's able to give you the location of a dispensary near you
+- Ability to add your own recipes from your own grows
+
+## USER STORY
+- AS A grow enthusiast
+- I WANT to be able to see what dispensaries are close to me 
+- I ALSO want to be able to share my recipes with other growers
+
+##SCREENSHOTS
+
+
+## TASKS
+-Brian, Recipe API/Google API/ Front/Back-End/ 
+-Tim, Login/Logout/Authorization/ Front/Back-End
+Solomon, Presentation/ CSSFramework
+
+## APIS USED
+- Google Maps API
+- Recipe API
+
+## GITHUB REPO
+https://github.com/SxWoods/GreenGenie
