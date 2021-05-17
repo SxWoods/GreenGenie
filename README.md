@@ -13,6 +13,14 @@ Green Genie is a app that aims to give any marijauna plant growing enthusiast, b
 
 ##SCREENSHOTS
 
+<img width="771" alt="Screen Shot 2021-05-17 at 3 41 56 PM" src="https://user-images.githubusercontent.com/75388687/118566373-60cd0580-b739-11eb-8c0b-a54f5b065fa1.png">
+- Map will give user ability to be able to find local dispensaries
+
+
+
+
+
+
 
 ## TASKS
 -Brian, Recipe API/Google API/ Front/Back-End/ 
