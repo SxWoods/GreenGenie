@@ -40,6 +40,13 @@ body {
     height: 50px;
 }
 
+#map {
+    /* display: none; */
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+}
+
 .recipe-card {
     min-width: 200px;
     /* width: 300px;
