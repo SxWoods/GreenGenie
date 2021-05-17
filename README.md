@@ -24,7 +24,9 @@ Green Genie is a app that aims to give any marijauna plant growing enthusiast, b
 
 ## TASKS
 -Brian, Recipe API/Google API/ Front/Back-End/ 
+
 -Tim, Login/Logout/Authorization/ Front/Back-End
+
 Solomon, Presentation/ CSSFramework
 
 ## APIS USED
