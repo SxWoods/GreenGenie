@@ -14,7 +14,7 @@ router.get('/', async (req, res) =>{
   }
 }),
 
-router.post('/', async (req, res) => {
+router.post('/', withAuth, async (req, res) => {
   console.log('we hit the route :)')
   try {
     const newRecipe = await Recipe.create({
