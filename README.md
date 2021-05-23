@@ -1,5 +1,5 @@
 # GreenGenie
-Green Genie is a app that aims to give any marijauna plant growing enthusiast, a database to log for marijuana strains. It will also give you the location of your local despensaries.
+Green Genie is an app that aims to give any marijauna plant growing enthusiast, a database to log for marijuana strains. It will also give you the location of your local despensaries.
 
 ## FEATURES
 - Gives user ability to create a login and sign in 
